@@ -1,0 +1,2 @@
+# GiphyApp
+AJAX, JSON
