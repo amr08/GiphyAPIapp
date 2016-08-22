@@ -1,0 +1,87 @@
+
+body {
+	background: black;
+	padding: 10px;
+
+}
+
+#wrapper {
+	margin: 0 auto;
+	border: 2px solid black;
+	height: 800px;
+	padding: 40px;
+	background-image: url("http://www.classicstairs.com/wp-content/grand-media/image/WoodPanel_1.jpg");
+	border-radius: 10px;
+	background-image: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+
+	
+}
+
+section {
+	background: ivory;
+	border: 2px solid black;
+	float: left;
+	width: 40%;
+	text-align: center;
+	border-radius: 10px;
+
+
+}
+
+#themeButtons {
+	padding: 20px;
+
+
+
+}
+
+button {
+	padding: 15px;
+	margin: 8px;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+
+}
+
+#theme-form {
+	padding: 20px;
+
+
+}
+
+#theme-input {
+	padding: 10px;
+}
+
+#addPerson {
+	margin-top: 20px;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 8px;
+	width: 25%;
+
+}
+
+#images {
+	border: 2px solid black;
+	height: 20px;
+	float: right;
+	width: 58%;
+	position: relative;
+	background: ivory;
+	border-radius: 10px;
+
+}
+
+#text {
+	font-size: 20px;
+	padding: 10px;
+
+}
