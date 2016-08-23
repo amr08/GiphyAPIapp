@@ -2,19 +2,30 @@
 body {
 	background: black;
 	padding: 10px;
+	padding-top: 0px;
 
+}
+
+header {
+
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #CD2626;
+	font-family: "Candal";
+	text-shadow: 10px 5px 5px black;
 }
 
 #wrapper {
 	margin: 0 auto;
 	border: 2px solid black;
-	height: 800px;
+	height: 1000px;
 	padding: 40px;
-	background-image: url("http://www.classicstairs.com/wp-content/grand-media/image/WoodPanel_1.jpg");
+	background-image: url("http://www.jwardbrickwork.com/wp-content/uploads/2015/03/brick-wall-with-spotlight-1200-e1425826475618-1170x500.jpg	");
 	border-radius: 10px;
-	background-image: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
+	background-size: cover;
 
 
 	
@@ -22,11 +33,14 @@ body {
 
 section {
 	background: ivory;
-	border: 2px solid black;
+	border: 1px solid black;
 	float: left;
 	width: 40%;
 	text-align: center;
 	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+
+
 
 
 }
@@ -43,8 +57,8 @@ button {
 	margin: 8px;
 	font-size: 16px;
 	border-radius: 10px;
-	background-color: white;
-	color: black;
+	background-color: #EECBAD;
+
 
 }
 
@@ -56,27 +70,48 @@ button {
 
 #theme-input {
 	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #EEE5DE;
 }
 
 #addPerson {
 	margin-top: 20px;
 	font-size: 16px;
 	border-radius: 10px;
-	background-color: white;
-	color: black;
+	background-color: #FFE4B5;
 	padding: 8px;
 	width: 25%;
 
+
 }
 
+.clear, .clearText{
+	margin-top: 20px;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: #FFE4B5;
+	padding: 8px;
+	width: 25%;
+}
+
+
+
+
 #images {
-	border: 2px solid black;
-	height: 20px;
+	
+	text-align: center;
+	height: 100%;
+	border: 1px solid black;
 	float: right;
 	width: 58%;
 	position: relative;
 	background: ivory;
 	border-radius: 10px;
+	min-height: 315px;
+	box-shadow: 5px 5px 5px black;
+	
+
 
 }
 

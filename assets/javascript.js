@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-var topic = ["Jim Carrey", "Robin Williams", "Obama"];
+var topic = ["Jim Carrey", "Louie C.K.", "Robin Williams"];
 
 	$('#themeButtons').empty();
 	$('#images').empty();
@@ -15,7 +15,7 @@ function display () {
 
 	var APIKey = "dc6zaTOxFJmzC";
 	//var search = ("jim" + "Carrey");
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + ppl + "&api_key=" + APIKey+ "&limit=10";
+	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + ppl + "&api_key=" + APIKey+ "&limit=10&rating=pg-13&rating=pg&rating=g";
 
 
 	$.ajax({url: queryURL, method: "GET"})
@@ -91,7 +91,7 @@ function createButton() {
 		button.text(topic[j]);
 
 		$("#themeButtons").append(button);
-      
+      $('#images').empty();
 
 	}
 
@@ -106,13 +106,22 @@ $('#images').val("");
 $(document).on('click', '.ppl', display);
 
 	
+
+
+	
 	
 
 createButton();
 
+
+
 //end global
 
+$(".clearText").on('click', function(){
 
+	$("#theme-form input").val("");
+
+});
 
 $("#addPerson").on('click', function(){
 
@@ -127,6 +136,7 @@ $("#addPerson").on('click', function(){
 	return false;
 
 });
+
 
 
 
