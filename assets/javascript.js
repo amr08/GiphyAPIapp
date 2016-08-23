@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-var topic = ["Jim Carrey", "Louie C.K.", "Robin Williams"];
+var topic = ["Jim Carrey", "Louie C.K.", "Robin Williams", "Kevin Hart", "Jerry Seinfeld", "Dave Chappelle", "Amy Schumer", "Aziz Ansari", "Chris Rock"];
 
 	$('#themeButtons').empty();
 	$('#images').empty();
@@ -38,7 +38,7 @@ function display () {
 	                image.attr("data-animate", imageLink[i].images.fixed_height.url);
 				   
 		
-					gifs.append("rating: ", imageLink[i].rating + " <br>")
+					gifs.append("Rating: ", imageLink[i].rating + " <br>")
 					gifs.append(image);
 
 					$("#images").prepend(gifs);

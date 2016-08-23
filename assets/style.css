@@ -1,8 +1,9 @@
 
 body {
 	background: black;
-	padding: 10px;
-	padding-top: 0px;
+	/*padding: 10px;*/
+	/*padding-top: 0px;*/
+	margin: 0px;
 
 }
 
@@ -24,8 +25,9 @@ header {
 	background-image: url("http://www.jwardbrickwork.com/wp-content/uploads/2015/03/brick-wall-with-spotlight-1200-e1425826475618-1170x500.jpg	");
 	border-radius: 10px;
 	background-attachment: fixed;
-	background-repeat: repeat;
+	/*background-repeat: repeat;*/
 	background-size: cover;
+	font-family: "Helvetica";
 
 
 	
@@ -33,12 +35,13 @@ header {
 
 section {
 	background: ivory;
-	border: 1px solid black;
+	border: 2px solid black;
 	float: left;
 	width: 40%;
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px black;
+
 
 
 
@@ -58,8 +61,14 @@ button {
 	font-size: 16px;
 	border-radius: 10px;
 	background-color: #EECBAD;
+	font-family: "Helvetica";
 
 
+
+}
+
+button:hover {
+	box-shadow: 3px 3px 5px grey;
 }
 
 #theme-form {
@@ -69,10 +78,11 @@ button {
 }
 
 #theme-input {
-	padding: 10px;
+	padding: 8px;
 	font-size: 16px;
 	border-radius: 5px;
 	border: 1px solid #EEE5DE;
+	box-shadow: 3px 1px 5px grey;
 }
 
 #addPerson {
@@ -84,6 +94,10 @@ button {
 	width: 25%;
 
 
+}
+
+#addPerson:hover {
+	box-shadow: 3px 3px 5px grey;
 }
 
 .clear, .clearText{
@@ -102,7 +116,7 @@ button {
 	
 	text-align: center;
 	height: 100%;
-	border: 1px solid black;
+	border: 2px solid black;
 	float: right;
 	width: 58%;
 	position: relative;
@@ -110,6 +124,7 @@ button {
 	border-radius: 10px;
 	min-height: 315px;
 	box-shadow: 5px 5px 5px black;
+	font-family: "Helvetica";
 	
 
 
