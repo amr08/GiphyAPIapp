@@ -1,10 +1,12 @@
 
 body {
-	background: black;
-	/*padding: 10px;*/
-	/*padding-top: 0px;*/
-	margin: 0px;
 
+	background-attachment: fixed;
+	margin: 0px;
+	background-color: black;
+	background-size: cover;
+	background-image: url("http://www.jwardbrickwork.com/wp-content/uploads/2015/03/brick-wall-with-spotlight-1200-e1425826475618-1170x500.jpg");
+	font-family: "Helvetica";
 }
 
 header {
@@ -15,47 +17,32 @@ header {
 	color: #CD2626;
 	font-family: "Candal";
 	text-shadow: 10px 5px 5px black;
+
 }
 
-#wrapper {
-	margin: 0 auto;
-	border: 2px solid black;
-	height: 1000px;
-	padding: 40px;
-	background-image: url("http://www.jwardbrickwork.com/wp-content/uploads/2015/03/brick-wall-with-spotlight-1200-e1425826475618-1170x500.jpg	");
-	border-radius: 10px;
-	background-attachment: fixed;
-	/*background-repeat: repeat;*/
-	background-size: cover;
-	font-family: "Helvetica";
 
-
-	
-}
 
 section {
+
 	background: ivory;
 	border: 2px solid black;
-	float: left;
-	width: 40%;
+	width: 80%;
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px black;
-
-
-
-
+	margin: 0 auto;
+	margin-bottom: 30px;
 
 }
 
 #themeButtons {
+
 	padding: 20px;
-
-
 
 }
 
 button {
+
 	padding: 15px;
 	margin: 8px;
 	font-size: 16px;
@@ -63,29 +50,32 @@ button {
 	background-color: #EECBAD;
 	font-family: "Helvetica";
 
-
-
 }
 
-button:hover {
-	box-shadow: 3px 3px 5px grey;
-}
+	button:hover {
+
+		box-shadow: 3px 3px 5px grey;
+
+	}
 
 #theme-form {
-	padding: 20px;
 
+	padding: 20px;
 
 }
 
 #theme-input {
+
 	padding: 8px;
 	font-size: 16px;
 	border-radius: 5px;
 	border: 1px solid #EEE5DE;
 	box-shadow: 3px 1px 5px grey;
+
 }
 
 #addPerson {
+
 	margin-top: 20px;
 	font-size: 16px;
 	border-radius: 10px;
@@ -93,14 +83,16 @@ button:hover {
 	padding: 8px;
 	width: 25%;
 
-
 }
 
-#addPerson:hover {
-	box-shadow: 3px 3px 5px grey;
-}
+	#addPerson:hover {
+
+		box-shadow: 3px 3px 5px grey;
+
+	}
 
 .clear, .clearText{
+
 	margin-top: 20px;
 	font-size: 16px;
 	border-radius: 10px;
@@ -108,29 +100,32 @@ button:hover {
 	padding: 8px;
 	width: 25%;
 }
-
-
-
 
 #images {
 	
-	text-align: center;
-	height: 100%;
 	border: 2px solid black;
-	float: right;
-	width: 58%;
-	position: relative;
+	margin: 0 auto;
+	width: 80%;
 	background: ivory;
 	border-radius: 10px;
 	min-height: 315px;
 	box-shadow: 5px 5px 5px black;
 	font-family: "Helvetica";
-	
-
+	text-align: center;	
 
 }
 
+.items {
+
+	width: 40%;
+	display: inline-block;
+	padding: 30px;
+
+}
+
+
 #text {
+
 	font-size: 20px;
 	padding: 10px;
 

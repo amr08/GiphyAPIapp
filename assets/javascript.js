@@ -1,15 +1,16 @@
 $(document).ready(function(){
 
 
+//Global Variables
 var topic = ["Jim Carrey", "Louie C.K.", "Robin Williams", "Kevin Hart", "Jerry Seinfeld", "Dave Chappelle", "Amy Schumer", "Aziz Ansari", "Chris Rock"];
 
-	$('#themeButtons').empty();
-	$('#images').empty();
-	$('#images').val("");
-	$('#themeButtons').val("");
 
+
+//Getting API to Display
 
 function display () {
+
+	$("#images").empty();
 
 	var ppl = $(this).data("name");
 
@@ -42,7 +43,7 @@ function display () {
 					gifs.append(image);
 
 					$("#images").prepend(gifs);
-$('#images').val("");
+					$('#images').val("");
 	  		}
 
 
@@ -53,13 +54,13 @@ $('#images').val("");
 				var state = $(this).attr("data-state");
 
 
-					if ( state == 'still'){
+					if (state == 'still') {
 
 		                $(this).attr('src', $(this).data('animate'));
 		                $(this).attr('data-state', 'animate');
 		            }
 
-		            else{
+		            else {
 
 		                $(this).attr('src', $(this).data('still'));
 		                $(this).attr('data-state', 'still');
@@ -71,19 +72,12 @@ $('#images').val("");
 
 };
 
-//end function display
-
-
-
 
 
 
 function createButton() {
 
-
-
 	for(var j = 0; j<topic.length; j++) {
-
 
 		var button = $("<button>"); 
 		button.addClass("ppl")
@@ -91,31 +85,32 @@ function createButton() {
 		button.text(topic[j]);
 
 		$("#themeButtons").append(button);
-      $('#images').empty();
+     
 
 	}
 
 };
-//end function createButton
 
 
-//global
 
-$('#images').empty();
-$('#images').val("");
-$(document).on('click', '.ppl', display);
 
+//On click listeners for submit and clear buttons
+
+
+$("#addPerson").on('click', function(){
+
+ 	$('#themeButtons').empty();
 	
+		var person = $("#theme-input").val().trim();
 
+		topic.push(person);
+		
+		createButton();
 
-	
-	
+	return false;
 
-createButton();
+});
 
-
-
-//end global
 
 $(".clearText").on('click', function(){
 
@@ -123,20 +118,12 @@ $(".clearText").on('click', function(){
 
 });
 
-$("#addPerson").on('click', function(){
 
- $('#themeButtons').empty();
-	
-	var person = $("#theme-input").val().trim();
+//calling functions
 
-	topic.push(person);
-		
-	createButton();
+createButton();
 
-	return false;
-
-});
-
+$(document).on('click', '.ppl', display);
 
 
 
