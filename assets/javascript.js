@@ -12,7 +12,7 @@ $(document).ready(function(){
 		var ppl = $(this).data("name");
 		var APIKey = "dc6zaTOxFJmzC";
 		//var search = ("jim" + "Carrey");
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + ppl + "&api_key=" + APIKey+ "&limit=10&rating=pg-13&rating=pg&rating=g";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + ppl + "&api_key=" + APIKey+ "&limit=10&rating=pg-13&rating=pg&rating=g";
 
 		$.ajax({url: queryURL, method: "GET"})
 
